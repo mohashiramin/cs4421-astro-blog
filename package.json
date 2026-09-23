@@ -11,7 +11,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "lint": "eslint",
+    "lint": "eslint \"src/**/*.{js,astro}\"",
     "test:unit": "vitest"
   },
   "dependencies": {
@@ -26,8 +26,11 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
+    "@typescript-eslint/eslint-plugin": "^8.70.1",
+    "@typescript-eslint/parser": "^8.70.1",
     "eslint": "^10.11.0",
     "eslint-plugin-astro": "^3.2.1",
+    "jiti": "^2.7.0",
     "typescript": "^6.0.3",
     "vite": "^5.4.11",
     "vitest": "^2.1.8"
